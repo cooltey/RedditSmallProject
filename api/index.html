@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Research.com Coding Test API</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../css/style.css" rel="stylesheet" media="screen">
+    <style>
+    	.panel-body{
+    		word-break: break-all;
+    	}
+    </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div class="container">
+		<h3>Securly PHP Question  API List</h3>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading">POST <a href="GetFeeds.php" target="_blank">GetFeeds.php</a></div>
+		  <div class="panel-body">
+		    Get the Feeds List
+		    <hr>
+		    <b>Parameters</b>
+		    <li>type: hot, new, search</li>
+		    <li>prev: previous page token</li>
+		    <li>next: next page token</li>
+		    <li>keyword: search keyword</li>
+		    <li>count: count for pager</li>
+		    <li>Example: <a href="./GetFeeds.php?type=hot" target="_blank">GetFeeds.php?type=hot</a></li>
+		    <hr>
+		    <b>Return</b>
+		    <xmp>{
+"StatusCode": "200", // Status Code (200, 404)
+"Count": 25, // Count per page
+"Next": 't3_6lgu2p', // Next page token
+"Prev": 't1_12lgu2', // Previous page token
+"List": [] // Data Array
+}</xmp>
+		  </div>
+		</div>
+
+	</div>
+</body>
+</html>
